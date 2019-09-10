@@ -20,8 +20,6 @@ public class App {
             job.setOutputValueClass(IntWritable.class);
             job.setMapperClass(Map.class);
             job.setReducerClass(Reduce.class);
-            job.setCombinerClass(Reduce.class);
-            job.setNumReduceTasks(4);
             job.setInputFormatClass(TextInputFormat.class);
             job.setOutputFormatClass(TextOutputFormat.class);
 
