@@ -72,6 +72,8 @@ public class Map extends Mapper<LongWritable, Text, Text, IntWritable> {
 
             String newToken = token.substring(0, tokenLength - 1).trim();
             this.outData(newToken, context);
+        } else {
+            this.outData(token, context);
         }
     }
 
